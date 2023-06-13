@@ -34,8 +34,6 @@ body{
     font-weight: 500;
     color: var(--secondary);
     margin-left: 25px;
-    padding-right: 50px;
-    width: 200px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
