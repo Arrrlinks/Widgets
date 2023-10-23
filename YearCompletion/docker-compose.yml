@@ -3,8 +3,13 @@ version: "3.9"
 services:
   web:
     build: .
-    restart: always
-    ports:
-      - "8001:80"
+    restart: unless-stopped
+    container_name: yearcompletion
+    networks:
+      - caddy
     volumes:
       - ./:/var/www/html
+
+networks:
+    caddy:
+        external: true
